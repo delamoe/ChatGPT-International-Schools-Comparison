@@ -1,5 +1,3 @@
-# Int'l Schools Compared by ChatGPT
-
 | Criteria                            | AISD (Dhaka, Bangladesh) | ISB (Budapest, Hungary)   | ISKL (Kuala Lumpur, Malaysia) | ISK (Nairobi, Kenya)         |
 |-------------------------------------|--------------------------|---------------------------|-------------------------------|-----------------------------|
 | **Location**                        | Dhaka, Bangladesh         | Budapest, Hungary          | Kuala Lumpur, Malaysia         | Nairobi, Kenya               |
