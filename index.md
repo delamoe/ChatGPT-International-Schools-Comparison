@@ -27,3 +27,4 @@
 | **Ease of Travel**                  | Limited international connectivity | Excellent, major European hub | Good, connected to many major cities in Asia | Fair, regional and international options available | Very good, multiple international flight options |
 | **Air Quality**                     | Poor, high pollution levels | Good, moderate pollution     | Moderate, occasional haze     | Moderate, seasonal pollution  | Moderate, can be affected by pollution and humidity |
 | **Outdoor Activities**              | Limited, mostly urban     | Abundant, historical sites, hiking | Plenty, beaches, hiking, nature parks | Safari, nature reserves, hiking | Plenty, hiking, cycling, outdoor exploration |
+| **Cleanliness**                     | Moderate, challenges with waste management and pollution | Clean, well-maintained public spaces | Moderate, city areas clean, some pollution | Moderate, mixed cleanliness levels | Clean, efficient waste management, low litter |
