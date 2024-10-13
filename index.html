@@ -7,7 +7,8 @@
     max-height: 600px;
     overflow-y: auto;
     position: relative;
-    margin-bottom: 0;  /* Ensure no extra bottom margin */
+    margin: 0;  /* Remove all margins */
+    padding: 0;  /* Remove all padding */
   }
 
   table {
@@ -28,14 +29,18 @@
     border: 1px solid #ddd;
   }
 
-  body {
-    margin: 0;  /* Remove margins around the body */
+  body, html {
+    height: 100%;  /* Ensure body and HTML take up full height */
+    margin: 0;  /* Remove all margins */
+    padding: 0;  /* Remove all padding */
   }
 
-  html {
-    height: 100%;  /* Set height to prevent scrolling issues */
+  .table-container {
+    flex-grow: 1;  /* Ensure the table takes up remaining space */
   }
-</style></head>
+
+</style>
+</head>
 <body>
 
 <div class="table-container">
