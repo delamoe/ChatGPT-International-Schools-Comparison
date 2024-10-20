@@ -17,6 +17,40 @@
     select {
       width: 100%;
     }
+
+    /* Banded rows (medium grey) for first column */
+    tbody tr:nth-child(even) td:first-child {
+      background-color: #f2f2f2;
+    }
+    tbody tr:nth-child(odd) td:first-child {
+      background-color: #e0e0e0;
+    }
+
+    /* Color-coded columns with light shades for banding */
+    tbody tr:nth-child(even) td:nth-child(2) {
+      background-color: rgba(255, 204, 203, 0.8); /* Light Red, banded */
+    }
+    tbody tr:nth-child(odd) td:nth-child(2) {
+      background-color: rgba(255, 204, 203, 1); /* Light Red */
+    }
+    tbody tr:nth-child(even) td:nth-child(3) {
+      background-color: rgba(204, 255, 204, 0.8); /* Light Green, banded */
+    }
+    tbody tr:nth-child(odd) td:nth-child(3) {
+      background-color: rgba(204, 255, 204, 1); /* Light Green */
+    }
+    tbody tr:nth-child(even) td:nth-child(4) {
+      background-color: rgba(173, 216, 230, 0.8); /* Light Blue, banded */
+    }
+    tbody tr:nth-child(odd) td:nth-child(4) {
+      background-color: rgba(173, 216, 230, 1); /* Light Blue */
+    }
+    tbody tr:nth-child(even) td:nth-child(5) {
+      background-color: rgba(255, 255, 204, 0.8); /* Light Yellow, banded */
+    }
+    tbody tr:nth-child(odd) td:nth-child(5) {
+      background-color: rgba(255, 255, 204, 1); /* Light Yellow */
+    }
   </style>
 </head>
 <body>
