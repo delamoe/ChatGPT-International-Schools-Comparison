@@ -1,324 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  /* Ensure the HTML and body take up full height */
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Container for the table */
-  .table-container {
-    flex-grow: 1;  /* Ensures the table fills the remaining space */
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Basic table styling */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th {
-    position: sticky;
-    top: 0;
-    background-color: #d9d9d9;
-    z-index: 1;
-  }
-
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-
-  tbody tr:nth-child(even) {
-  background-color: #d9d9d9; /* Light gray color for even rows */
- }
-
-  tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* White color for odd rows */
- }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Comparison</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    select {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-<body>
 
-<div class="table-container">
-  <table>
-    <thead>
-      <tr>
-        <th>Criteria</th>
-        <th>American Embassy School (Delhi, India)</th>
-        <th>ISB (Budapest, Hungary)</th>
-        <th>ISKL (Kuala Lumpur, Malaysia)</th>
-        <th>ISK (Nairobi, Kenya)</th>
-        <th>TAS (Taipei, Taiwan)</th>
-        <th>CIS (Cayman Islands)</th>
-        <th>Colegio Franklin Roosevelt (Lima, Peru)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Location & Elevation</td>
-        <td>Delhi, India (216 m / 709 ft)</td>
-        <td>Budapest, Hungary (96 m / 315 ft)</td>
-        <td>Kuala Lumpur, Malaysia (21 m / 69 ft)</td>
-        <td>Nairobi, Kenya (1,795 m / 5,889 ft)</td>
-        <td>Taipei, Taiwan (6 m / 20 ft)</td>
-        <td>Grand Cayman, Cayman Islands (3 m / 10 ft)</td>
-        <td>Lima, Peru (154 m / 505 ft)</td>
-      </tr>
-      <tr>
-        <td>Climate</td>
-        <td>Humid subtropical, hot summers, mild winters</td>
-        <td>Temperate continental, hot summers, cold winters</td>
-        <td>Tropical rainforest, warm and humid, frequent rain</td>
-        <td>Subtropical highland, mild temperatures, rainy seasons</td>
-        <td>Subtropical monsoon, hot summers, mild winters</td>
-        <td>Tropical, warm to hot year-round, hurricane season</td>
-        <td>Desert climate, mild summers and winters</td>
-      </tr>
-      <tr>
-        <td>Salary Range</td>
-        <td>$60,000 - $75,000</td>
-        <td>$60,000 - $75,000</td>
-        <td>$65,000 - $80,000</td>
-        <td>$55,000 - $70,000</td>
-        <td>$70,000 - $85,000</td>
-        <td>$65,000 - $80,000</td>
-        <td>$60,000 - $75,000</td>
-      </tr>
-      <tr>
-        <td>Benefits</td>
-        <td>Housing, healthcare, travel allowance</td>
-        <td>Housing, healthcare, airfare</td>
-        <td>Housing, healthcare, travel allowance</td>
-        <td>Housing, healthcare, travel allowance</td>
-        <td>Housing, healthcare, airfare</td>
-        <td>Housing, healthcare, travel allowance</td>
-        <td>Housing, healthcare, travel allowance</td>
-      </tr>
-      <tr>
-        <td>Cost of Living</td>
-        <td>Moderate</td>
-        <td>Moderate to high</td>
-        <td>Moderate</td>
-        <td>Moderate</td>
-        <td>High</td>
-        <td>Very high</td>
-        <td>Moderate</td>
-      </tr>
-      <tr>
-        <td>Taxes</td>
-        <td>Income tax applies</td>
-        <td>15-33% income tax</td>
-        <td>No income tax for expats</td>
-        <td>Income tax varies (10-30%)</td>
-        <td>Taxes apply to salaries</td>
-        <td>No income tax for expats</td>
-        <td>Income tax applies</td>
-      </tr>
-      <tr>
-        <td>Savings Potential</td>
-        <td>Moderate, due to taxes and cost of living</td>
-        <td>Moderate, taxes and higher living costs reduce savings</td>
-        <td>High, low taxes and moderate cost of living</td>
-        <td>Moderate, taxes impact savings but costs are manageable</td>
-        <td>Moderate to high, good salary but higher living costs</td>
-        <td>High, no taxes but high living expenses</td>
-        <td>Moderate, similar to other cities</td>
-      </tr>
-      <tr>
-        <td>Work Hours</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-        <td>Typical, 40 hours/week</td>
-      </tr>
-      <tr>
-        <td>Vacation Time</td>
-        <td>Long summer breaks, local holidays</td>
-        <td>Long summer breaks, EU holidays</td>
-        <td>Long summer breaks, local holidays</td>
-        <td>Long summer breaks, local holidays</td>
-        <td>Long summer breaks, local holidays</td>
-        <td>Long summer breaks, local holidays</td>
-        <td>Long summer breaks, local holidays</td>
-      </tr>
-      <tr>
-        <td>Healthcare Quality</td>
-        <td>Good private healthcare options</td>
-        <td>Excellent public/private healthcare</td>
-        <td>Excellent public/private healthcare</td>
-        <td>Good private healthcare options</td>
-        <td>High-quality healthcare</td>
-        <td>High-quality healthcare</td>
-        <td>High-quality healthcare</td>
-      </tr>
-      <tr>
-        <td>Mental Health Support</td>
-        <td>Growing awareness</td>
-        <td>Strong support programs</td>
-        <td>Strong support programs</td>
-        <td>Growing awareness</td>
-        <td>Well-developed mental health programs</td>
-        <td>Well-developed mental health programs</td>
-        <td>Growing mental health programs</td>
-      </tr>
-      <tr>
-        <td>Visa Process</td>
-        <td>Relatively straightforward, requires work permit</td>
-        <td>EU visa required, relatively easy</td>
-        <td>Straightforward, work visa required</td>
-        <td>Work visa required, process varies</td>
-        <td>Relatively easy work visa process</td>
-        <td>Relatively easy work visa process</td>
-        <td>Straightforward, work visa required</td>
-      </tr>
-      <tr>
-        <td>Residency Options</td>
-        <td>Limited long-term residency</td>
-        <td>EU residency possible</td>
-        <td>Limited long-term residency</td>
-        <td>Limited long-term residency</td>
-        <td>Limited long-term residency</td>
-        <td>Limited long-term residency</td>
-        <td>Limited long-term residency</td>
-      </tr>
-      <tr>
-        <td>Language Barriers</td>
-        <td>Hindi, English widely spoken</td>
-        <td>Hungarian, English in expat communities</td>
-        <td>Malay, English widely spoken</td>
-        <td>Swahili, English widely spoken</td>
-        <td>Mandarin, English widely spoken</td>
-        <td>English widely spoken</td>
-        <td>Spanish, English widely spoken</td>
-      </tr>
-      </tr>
-      <tr>
-        <td>Expat Community</td>
-        <td>Large, well-established expat community</td>
-        <td>Large and well-established expat community</td>
-        <td>Large expat community</td>
-        <td>Large and diverse expat community</td>
-        <td>Large, well-established expat community</td>
-        <td>Large, well-established expat community</td>
-        <td>Large expat community</td>
-      </tr>
-      <tr>
-        <td>Counselor-to-Student Ratio</td>
-        <td>Improving, growing focus</td>
-        <td>Low ratio, well-resourced</td>
-        <td>Low ratio, well-resourced</td>
-        <td>Improving, focus on mental health growing</td>
-        <td>Low ratio, well-resourced</td>
-        <td>Low ratio, well-resourced</td>
-        <td>Improving, strong focus on mental health</td>
-      </tr>
-      <tr>
-        <td>Safety and Security</td>
-        <td>Moderate, traffic and pollution concerns</td>
-        <td>Safe, stable</td>
-        <td>Safe, stable</td>
-        <td>Moderate, security concerns in some areas</td>
-        <td>Safe, stable environment</td>
-        <td>Safe, stable environment</td>
-        <td>Safe, stable environment</td>
-      </tr>
-      <tr>
-        <td>Education System</td>
-        <td>Follows U.S. curriculum, IB program</td>
-        <td>IB, U.S., and British curricula options</td>
-        <td>IB, U.S., and British curricula options</td>
-        <td>U.S., IB, and British curricula</td>
-        <td>American curriculum with AP and IB options</td>
-        <td>IB curriculum and U.S.-based program</td>
-        <td>IB curriculum, U.S.-based program</td>
-      </tr>
-      <tr>
-        <td>Personal Safety</td>
-        <td>Relatively safe, need precautions in traffic</td>
-        <td>Very safe, low crime</td>
-        <td>Very safe</td>
-        <td>Moderate, need precautions in certain areas</td>
-        <td>Very safe, low crime</td>
-        <td>Very safe, low crime</td>
-        <td>Very safe, low crime</td>
-      </tr>
-      <tr>
-        <td>Professional Development</td>
-        <td>Strong focus on PD opportunities</td>
-        <td>Strong focus on PD opportunities</td>
-        <td>Strong focus on PD opportunities</td>
-        <td>Growing focus on PD opportunities</td>
-        <td>Extensive PD opportunities available</td>
-        <td>Strong focus on PD opportunities</td>
-        <td>Strong focus on PD opportunities</td>
-      </tr>
-      <tr>
-        <td>Cultural Integration</td>
-        <td>Some language barriers, cultural differences</td>
-        <td>Easy for Western expats</td>
-        <td>Easy integration for expats</td>
-        <td>Rich cultural experience, integration possible</td>
-        <td>Easy integration, diverse community</td>
-        <td>Easy integration, English widely spoken</td>
-        <td>Easy integration, diverse community</td>
-      </tr>
-      <tr>
-        <td>Ease of Travel</td>
-        <td>Good, regional and international options</td>
-        <td>Excellent, major European hub</td>
-        <td>Good, connected to major Asian cities</td>
-        <td>Fair, regional and international options</td>
-        <td>Very good, multiple international flight options</td>
-        <td>Good, international flights available</td>
-        <td>Good, international and regional connections</td>
-      </tr>
-      <tr>
-        <td>Air Quality</td>
-        <td>Poor, high pollution levels</td>
-        <td>Good, moderate pollution</td>
-        <td>Moderate, occasional haze</td>
-        <td>Moderate, seasonal pollution</td>
-        <td>Moderate, affected by pollution and humidity</td>
-        <td>Good, clean air</td>
-        <td>Moderate, can vary by season</td>
-      </tr>
-      <tr>
-        <td>Outdoor Activities</td>
-        <td>Limited, mostly urban</td>
-        <td>Abundant, historical sites, hiking</td>
-        <td>Plenty, beaches, hiking, nature parks</td>
-        <td>Safari, nature reserves, hiking</td>
-        <td>Plenty, hiking, cycling, outdoor exploration</td>
-        <td>Plenty, beaches, water sports, hiking</td>
-        <td>Plenty, access to mountains, beaches, and parks</td>
-      </tr>
-      <tr>
-        <td>Cleanliness</td>
-        <td>Moderate, challenges with waste management and pollution</td>
-        <td>Clean, well-maintained public spaces</td>
-        <td>Moderate, city areas clean, some pollution</td>
-        <td>Moderate, mixed cleanliness levels</td>
-        <td>Clean, efficient waste management, low litter</td>
-        <td>Very clean, strong environmental regulations</td>
-        <td>Moderate, improving waste management</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<h1>Compare International Schools</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>
+        <select id="school1" onchange="updateTable()"></select>
+      </th>
+      <th>
+        <select id="school2" onchange="updateTable()"></select>
+      </th>
+      <th>
+        <select id="school3" onchange="updateTable()"></select> <!-- New column 1 -->
+      </th>
+      <th>
+        <select id="school4" onchange="updateTable()"></select> <!-- New column 2 -->
+      </th>
+    </tr>
+  </thead>
+  <tbody id="comparison-table">
+    <!-- Table rows will be populated by JavaScript -->
+  </tbody>
+</table>
+
+<script>
+  let schoolsData = {};
+
+  // Fetch the JSON file
+  fetch('schools.json')
+    .then(response => response.json())
+    .then(data => {
+      schoolsData = data;
+      populateDropdowns();
+      updateTable();
+    });
+
+  // Populate dropdowns with school names
+  function populateDropdowns() {
+    const schoolNames = Object.keys(schoolsData);
+    const dropdown1 = document.getElementById('school1');
+    const dropdown2 = document.getElementById('school2');
+    const dropdown3 = document.getElementById('school3'); // New column 1
+    const dropdown4 = document.getElementById('school4'); // New column 2
+
+    schoolNames.forEach(school => {
+      const option1 = document.createElement('option');
+      const option2 = document.createElement('option');
+      const option3 = document.createElement('option'); // New column 1
+      const option4 = document.createElement('option'); // New column 2
+
+      option1.value = option2.value = option3.value = option4.value = school;
+      option1.textContent = option2.textContent = option3.textContent = option4.textContent = school;
+
+      dropdown1.appendChild(option1);
+      dropdown2.appendChild(option2);
+      dropdown3.appendChild(option3); // New column 1
+      dropdown4.appendChild(option4); // New column 2
+    });
+
+    // Set default selected schools
+    dropdown1.selectedIndex = 0;
+    dropdown2.selectedIndex = 1;
+    dropdown3.selectedIndex = 2; // New column 1
+    dropdown4.selectedIndex = 3; // New column 2
+  }
+
+  // Update the table based on selected schools
+  function updateTable() {
+    const school1 = document.getElementById('school1').value;
+    const school2 = document.getElementById('school2').value;
+    const school3 = document.getElementById('school3').value; // New column 1
+    const school4 = document.getElementById('school4').value; // New column 2
+    const criteria = Object.keys(schoolsData[school1]);
+
+    const tableBody = document.getElementById('comparison-table');
+    tableBody.innerHTML = '';  // Clear the table body
+
+    criteria.forEach(criterion => {
+      const row = document.createElement('tr');
+
+      const criterionCell = document.createElement('td');
+      criterionCell.textContent = criterion;
+      row.appendChild(criterionCell);
+
+      const school1Cell = document.createElement('td');
+      school1Cell.textContent = schoolsData[school1][criterion] || 'N/A';
+      row.appendChild(school1Cell);
+
+      const school2Cell = document.createElement('td');
+      school2Cell.textContent = schoolsData[school2][criterion] || 'N/A';
+      row.appendChild(school2Cell);
+
+      const school3Cell = document.createElement('td');
+      school3Cell.textContent = schoolsData[school3][criterion] || 'N/A'; // New column 1
+      row.appendChild(school3Cell);
+
+      const school4Cell = document.createElement('td');
+      school4Cell.textContent = schoolsData[school4][criterion] || 'N/A'; // New column 2
+      row.appendChild(school4Cell);
+
+      tableBody.appendChild(row);
+    });
+  }
+</script>
 
 </body>
 </html>
