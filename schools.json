@@ -1,5 +1,30 @@
 {
-  "International School of Brussels (Brussels, Belgium)": {
+  "ISK: Int'l School of Kenya": {
+    "Location & Elevation": "Nairobi, Kenya (1,795 m / 5,889 ft)",
+    "Climate": "Subtropical highland, mild temperatures, rainy seasons",
+    "Salary Range": "$55,000 - $70,000",
+    "Benefits": "Housing, healthcare, travel allowance",
+    "Cost of Living": "Moderate",
+    "Taxes": "Income tax varies (10-30%)",
+    "Savings Potential": "Moderate, taxes impact savings but costs are manageable",
+    "Healthcare Quality": "Good private healthcare options",
+    "Mental Health Support": "Growing awareness",
+    "Visa Process": "Work visa required, process varies",
+    "Residency Options": "Limited long-term residency",
+    "Language Barriers": "Swahili, English widely spoken",
+    "Expat Community": "Large and diverse expat community",
+    "Counselor-to-Student Ratio": "Improving, focus on mental health growing",
+    "Safety and Security": "Moderate, security concerns in some areas",
+    "Education System": "U.S., IB, and British curricula",
+    "Personal Safety": "Moderate, need precautions in certain areas",
+    "Professional Development": "Growing focus on PD opportunities",
+    "Cultural Integration": "Rich cultural experience, integration possible",
+    "Ease of Travel": "Fair, regional and international options",
+    "Air Quality": "Moderate, seasonal pollution",
+    "Outdoor Activities": "Safari, nature reserves, hiking",
+    "Cleanliness": "Moderate, mixed cleanliness levels"
+  },
+  "ISB: Int'l School of Brussels": {
     "Location & Elevation": "Brussels, Belgium (13 m / 43 ft)",
     "Climate": "Temperate maritime, mild winters, cool summers",
     "Salary Range": "$60,000 - $75,000",
@@ -26,7 +51,7 @@
     "Outdoor Activities": "Plenty, cycling, parks, nearby forests",
     "Cleanliness": "Clean, well-maintained public spaces"
   },
-  "American Embassy School (Delhi, India)": {
+  "American Embassy School": {
     "Location & Elevation": "Delhi, India (216 m / 709 ft)",
     "Climate": "Humid subtropical, hot summers, mild winters",
     "Salary Range": "$60,000 - $75,000",
@@ -51,7 +76,7 @@
     "Outdoor Activities": "Limited, mostly urban",
     "Cleanliness": "Moderate, challenges with waste management and pollution"
   },
-  "ISB (Budapest, Hungary)": {
+  "ISB: Int'l School of Budapest": {
     "Location & Elevation": "Budapest, Hungary (96 m / 315 ft)",
     "Climate": "Temperate continental, hot summers, cold winters",
     "Salary Range": "$60,000 - $75,000",
@@ -76,7 +101,7 @@
     "Outdoor Activities": "Abundant, historical sites, hiking",
     "Cleanliness": "Clean, well-maintained public spaces"
   },
-  "ISKL (Kuala Lumpur, Malaysia)": {
+  "ISKL: Int'l School of Kuala Lumpur": {
     "Location & Elevation": "Kuala Lumpur, Malaysia (21 m / 69 ft)",
     "Climate": "Tropical rainforest, warm and humid, frequent rain",
     "Salary Range": "$65,000 - $80,000",
@@ -101,32 +126,7 @@
     "Outdoor Activities": "Plenty, beaches, hiking, nature parks",
     "Cleanliness": "Moderate, city areas clean, some pollution"
   },
-  "ISK (Nairobi, Kenya)": {
-    "Location & Elevation": "Nairobi, Kenya (1,795 m / 5,889 ft)",
-    "Climate": "Subtropical highland, mild temperatures, rainy seasons",
-    "Salary Range": "$55,000 - $70,000",
-    "Benefits": "Housing, healthcare, travel allowance",
-    "Cost of Living": "Moderate",
-    "Taxes": "Income tax varies (10-30%)",
-    "Savings Potential": "Moderate, taxes impact savings but costs are manageable",
-    "Healthcare Quality": "Good private healthcare options",
-    "Mental Health Support": "Growing awareness",
-    "Visa Process": "Work visa required, process varies",
-    "Residency Options": "Limited long-term residency",
-    "Language Barriers": "Swahili, English widely spoken",
-    "Expat Community": "Large and diverse expat community",
-    "Counselor-to-Student Ratio": "Improving, focus on mental health growing",
-    "Safety and Security": "Moderate, security concerns in some areas",
-    "Education System": "U.S., IB, and British curricula",
-    "Personal Safety": "Moderate, need precautions in certain areas",
-    "Professional Development": "Growing focus on PD opportunities",
-    "Cultural Integration": "Rich cultural experience, integration possible",
-    "Ease of Travel": "Fair, regional and international options",
-    "Air Quality": "Moderate, seasonal pollution",
-    "Outdoor Activities": "Safari, nature reserves, hiking",
-    "Cleanliness": "Moderate, mixed cleanliness levels"
-  },
-  "TAS (Taipei, Taiwan)": {
+  "TAS: Taipei American School": {
     "Location & Elevation": "Taipei, Taiwan (6 m / 20 ft)",
     "Climate": "Subtropical monsoon, hot summers, mild winters",
     "Salary Range": "$70,000 - $85,000",
@@ -151,7 +151,7 @@
     "Outdoor Activities": "Plenty, hiking, cycling, outdoor exploration",
     "Cleanliness": "Clean, efficient waste management, low litter"
   },
-  "CIS (Cayman Islands)": {
+  "CIS: Cayman Int'l School": {
     "Location & Elevation": "Grand Cayman, Cayman Islands (3 m / 10 ft)",
     "Climate": "Tropical, warm to hot year-round, hurricane season",
     "Salary Range": "$65,000 - $80,000",
@@ -176,7 +176,7 @@
     "Outdoor Activities": "Plenty, beaches, water sports, hiking",
     "Cleanliness": "Very clean, strong environmental regulations"
   },
-  "AISD (Dhaka, Bangladesh)": {
+  "AISD: American Int'l School of Dhaka": {
     "Location & Elevation": "Dhaka, Bangladesh (4 m / 13 ft)",
     "Climate": "Tropical wet and dry, hot and humid year-round, monsoon season",
     "Salary Range": "$55,000 - $65,000",
@@ -201,7 +201,7 @@
     "Outdoor Activities": "Limited, mostly urban",
     "Cleanliness": "Moderate, challenges with waste management"
   },
-    "Colegio Franklin Roosevelt (Lima, Peru)": {
+    "Colegio Franklin Roosevelt": {
     "Location & Elevation": "Lima, Peru (154 m / 505 ft)",
     "Climate": "Desert climate, mild summers and winters",
     "Salary Range": "$60,000 - $75,000",
