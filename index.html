@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>School Comparison</title>
+  <title>International Schools Comparison</title>
   <style>
     table {
       width: 100%;
@@ -26,12 +26,12 @@
     }
 
     /* Banded rows (medium grey) for first column */
-    tbody tr:nth-child(even) td:first-child {
-      background-color: #f2f2f2;
+    tbody tr:nth-child(even) {
+      background-color: #fff;
     }
 
-    tbody tr:nth-child(odd) td:first-child {
-      background-color: #e0e0e0;
+    tbody tr:nth-child(odd) {
+      background-color: #f4f4f4f4;
     }
 
     /* Color-coded columns with light shades for banding */
@@ -123,7 +123,7 @@
 
 <body>
 
-  <h1>Compare International Schools</h1>
+  <h1>International Schools Comparison</h1>
 
   <table>
     <thead>
@@ -147,7 +147,7 @@
           <select id="school4" onchange="updateDropdowns(); updateTable()"></select>
         </th>
         <th>
-          <select id="school5" onchange="updateDropdowns(); updateTable()"></select> <!-- New column -->
+          <select id="school5" onchange="updateDropdowns(); updateTable()"></select>
         </th>
       </tr>
     </thead>
