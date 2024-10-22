@@ -6,7 +6,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School Comparison</title>
   <style>
-    /* Your existing CSS remains unchanged */
+     table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    /* Banded rows (medium grey) for first column */
+    tbody tr:nth-child(even) td:first-child {
+      background-color: #f2f2f2;
+    }
+
+    tbody tr:nth-child(odd) td:first-child {
+      background-color: #e0e0e0;
+    }
+
+    /* Color-coded columns with light shades for banding */
+    tbody tr:nth-child(even) td:nth-child(2) {
+      background-color: rgba(255, 204, 203, 0.8);
+      /* Light Red, banded */
+    }
+
+    tbody tr:nth-child(odd) td:nth-child(2) {
+      background-color: rgba(255, 204, 203, 1);
+      /* Light Red */
+    }
+
+    tbody tr:nth-child(even) td:nth-child(3) {
+      background-color: rgba(204, 255, 204, 0.8);
+      /* Light Green, banded */
+    }
+
+    tbody tr:nth-child(odd) td:nth-child(3) {
+      background-color: rgba(204, 255, 204, 1);
+      /* Light Green */
+    }
+
+    tbody tr:nth-child(even) td:nth-child(4) {
+      background-color: rgba(173, 216, 230, 0.8);
+      /* Light Blue, banded */
+    }
+
+    tbody tr:nth-child(odd) td:nth-child(4) {
+      background-color: rgba(173, 216, 230, 1);
+      /* Light Blue */
+    }
+
+    tbody tr:nth-child(even) td:nth-child(5) {
+      background-color: rgba(255, 255, 204, 0.8);
+      /* Light Yellow, banded */
+    }
+
+    tbody tr:nth-child(odd) td:nth-child(5) {
+      background-color: rgba(255, 255, 204, 1);
+      /* Light Yellow */
+    }
+
+    /* Diagonal line in the first header cell (Criteria School) */
+    th:first-child {
+      position: relative;
+      width: 150px;
+      /* Set a fixed width for the header cell */
+      height: 60px;
+      /* Set a fixed height for the header cell */
+      text-align: center;
+    }
+
+    th:first-child::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      right: 15px;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid #ddd;
+      /* Diagonal line */
+      transform: rotate(25deg);
+    }
+
+    th:first-child>div {
+      position: relative;
+      z-index: 1;
+    }
+
+    th:first-child .top-right {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+    }
+
+    th:first-child .bottom-left {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+    }
+
+    select {
+      width: 100%;
+      height: 50px;
+      /* Set the height to 150px */
+      font-size: 16px;
+      /* Adjust font size if necessary */
+      text-align: center;
+      /* Optional: to center the text */
+    }
   </style>
 </head>
 
