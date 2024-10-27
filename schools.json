@@ -24,6 +24,56 @@
     "Outdoor Activities": "Safari, nature reserves, hiking",
     "Cleanliness": "Moderate, mixed cleanliness levels"
   },
+  "International School of Panama": {
+    "Location & Elevation": "Panama City, Panama (15 m / 49 ft)",
+    "Climate": "Tropical climate with a wet season and a dry season",
+    "Salary Range": "$45,000 - $65,000",
+    "Benefits": "Housing allowance, healthcare, flight allowance",
+    "Cost of Living": "Moderate",
+    "Taxes": "Progressive tax, varies from 0% to 25%",
+    "Savings Potential": "Moderate, depending on lifestyle",
+    "Healthcare Quality": "Good, private healthcare available",
+    "Mental Health Support": "Growing awareness and support programs",
+    "Visa Process": "Straightforward, work visa required",
+    "Residency Options": "Temporary residency possible",
+    "Language Barriers": "Spanish is widely spoken, English also used",
+    "Expat Community": "Large and active expat community",
+    "Counselor-to-Student Ratio": "Average, with some focus on personal support",
+    "Safety and Security": "Relatively safe, some security concerns in certain areas",
+    "Education System": "American curriculum, IB program available",
+    "Personal Safety": "Moderate, some areas require caution",
+    "Professional Development": "Good opportunities for growth and development",
+    "Cultural Integration": "Generally easy for Western expats",
+    "Ease of Travel": "Excellent, well-connected with international flights",
+    "Air Quality": "Moderate, with some seasonal pollution",
+    "Outdoor Activities": "Beaches, hiking, nature reserves",
+    "Cleanliness": "Moderate, cleanliness levels vary by area"
+  },
+  "American International School of Romania": {
+    "Location & Elevation": "Bucharest, Romania (90 m / 295 ft)",
+    "Climate": "Temperate-continental, with four distinct seasons",
+    "Salary Range": "$40,000 - $60,000",
+    "Benefits": "Housing provided, healthcare, travel stipend",
+    "Cost of Living": "Low to moderate",
+    "Taxes": "Flat income tax rate of 10%",
+    "Savings Potential": "High, due to low cost of living",
+    "Healthcare Quality": "Good, private healthcare is affordable",
+    "Mental Health Support": "Average, with growing resources",
+    "Visa Process": "Fairly simple, work visa required",
+    "Residency Options": "Possible with work contract",
+    "Language Barriers": "Romanian is the primary language, but English is widely spoken in the city",
+    "Expat Community": "Medium-sized, welcoming expat community",
+    "Counselor-to-Student Ratio": "Average, emphasis on student well-being",
+    "Safety and Security": "Generally safe, with a few areas to avoid",
+    "Education System": "American and IB curricula",
+    "Personal Safety": "High, low crime rate in most areas",
+    "Professional Development": "Many opportunities, supportive environment",
+    "Cultural Integration": "Relatively easy, welcoming local culture",
+    "Ease of Travel": "Good, with access to regional and international destinations",
+    "Air Quality": "Moderate, some pollution in winter",
+    "Outdoor Activities": "Parks, mountains, cultural landmarks",
+    "Cleanliness": "Generally clean, with well-maintained public spaces"
+  },
   "CIS: Chinese Int'l School": {
     "Location & Elevation": "Hong Kong, China (0 m / 0 ft)",
     "Climate": "Subtropical, hot and humid summers, mild winters",
@@ -50,7 +100,7 @@
     "Air Quality": "Moderate to poor, occasional pollution and haze",
     "Outdoor Activities": "Plenty, hiking, beaches, outdoor exploration available",
     "Cleanliness": "Clean city, good waste management but occasional air pollution"
-},
+  },
   "ISB: Int'l School of Brussels": {
     "Location & Elevation": "Brussels, Belgium (13 m / 43 ft)",
     "Climate": "Temperate maritime, mild winters, cool summers",
@@ -228,7 +278,7 @@
     "Outdoor Activities": "Limited, mostly urban",
     "Cleanliness": "Moderate, challenges with waste management"
   },
-    "Colegio Franklin Roosevelt": {
+  "Colegio Franklin Roosevelt": {
     "Location & Elevation": "Lima, Peru (154 m / 505 ft)",
     "Climate": "Desert climate, mild summers and winters",
     "Salary Range": "$60,000 - $75,000",
@@ -254,4 +304,3 @@
     "Cleanliness": "Moderate, improving waste management"
   }
 }
-
