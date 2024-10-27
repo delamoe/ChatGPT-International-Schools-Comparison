@@ -66,9 +66,10 @@
     <script>
       function toggleDarkMode() {
         document.body.classList.toggle("dark-mode");
-        
+
         // Toggle between solid sun and regular moon icons
-        const icon = document.getElementById("darkModeToggle").firstElementChild;
+        const icon =
+          document.getElementById("darkModeToggle").firstElementChild;
         if (document.body.classList.contains("dark-mode")) {
           icon.classList.replace("far", "fas");
           icon.classList.replace("fa-moon", "fa-sun");
@@ -80,7 +81,7 @@
 
       let schoolsData = {};
 
-      // Fetch the JSON file
+      // Fetch the JSON file and populate dropdowns and table
       fetch("schools.json")
         .then((response) => response.json())
         .then((data) => {
@@ -89,7 +90,7 @@
           updateTable();
         });
 
-      // Populate dropdowns with school names and set different default selections
+      // Populate dropdowns with school names and recall saved selections
       function populateDropdowns() {
         const schoolNames = Object.keys(schoolsData);
         const dropdowns = [
@@ -97,34 +98,40 @@
           document.getElementById("school2"),
           document.getElementById("school3"),
           document.getElementById("school4"),
-          document.getElementById("school5"), // New dropdown
+          document.getElementById("school5"),
         ];
 
         dropdowns.forEach((dropdown, index) => {
           dropdown.innerHTML = ""; // Clear existing options
-          schoolNames.forEach((school, schoolIndex) => {
+          schoolNames.forEach((school) => {
             const option = document.createElement("option");
             option.value = school;
             option.textContent = school;
             dropdown.appendChild(option);
-
-            // Set a different default selection for each dropdown
-            if (schoolIndex === index) {
-              option.selected = true;
-            }
           });
+
+          // Load saved selection from local storage if available
+          const savedSelection = localStorage.getItem(
+            `selectedSchool${index + 1}`
+          );
+          if (savedSelection && schoolNames.includes(savedSelection)) {
+            dropdown.value = savedSelection;
+          } else {
+            // Set a different default selection for each dropdown if nothing saved
+            dropdown.selectedIndex = index;
+          }
         });
         updateDropdowns(); // Refresh dropdowns on load
       }
 
-      // Update dropdowns to remove already selected schools from others
+      // Save selected schools to local storage and update dropdown options
       function updateDropdowns() {
         const selectedSchools = Array.from(
           document.querySelectorAll("select")
         ).map((select) => select.value);
         const dropdowns = document.querySelectorAll("select");
 
-        dropdowns.forEach((dropdown) => {
+        dropdowns.forEach((dropdown, index) => {
           const currentSelection = dropdown.value;
           dropdown.innerHTML = ""; // Clear the dropdown
           Object.keys(schoolsData).forEach((school) => {
@@ -141,18 +148,25 @@
               dropdown.appendChild(option);
             }
           });
+
+          // Save the selection to local storage
+          localStorage.setItem(`selectedSchool${index + 1}`, currentSelection);
         });
+
+        updateTable(); // Refresh the table with current selections
       }
 
       // Update the table based on selected schools
       function updateTable() {
-        const school1 = document.getElementById("school1").value;
-        const school2 = document.getElementById("school2").value;
-        const school3 = document.getElementById("school3").value;
-        const school4 = document.getElementById("school4").value;
-        const school5 = document.getElementById("school5").value; // New column
-        const criteria = Object.keys(schoolsData[school1]);
+        const selectedSchools = [
+          document.getElementById("school1").value,
+          document.getElementById("school2").value,
+          document.getElementById("school3").value,
+          document.getElementById("school4").value,
+          document.getElementById("school5").value,
+        ];
 
+        const criteria = Object.keys(schoolsData[selectedSchools[0]]);
         const tableBody = document.getElementById("comparison-table");
         tableBody.innerHTML = ""; // Clear the table body
 
@@ -163,30 +177,12 @@
           criterionCell.textContent = criterion;
           row.appendChild(criterionCell);
 
-          const school1Cell = document.createElement("td");
-          school1Cell.textContent =
-            schoolsData[school1][criterion] || "incomplete data";
-          row.appendChild(school1Cell);
-
-          const school2Cell = document.createElement("td");
-          school2Cell.textContent =
-            schoolsData[school2][criterion] || "incomplete data";
-          row.appendChild(school2Cell);
-
-          const school3Cell = document.createElement("td");
-          school3Cell.textContent =
-            schoolsData[school3][criterion] || "incomplete data";
-          row.appendChild(school3Cell);
-
-          const school4Cell = document.createElement("td");
-          school4Cell.textContent =
-            schoolsData[school4][criterion] || "incomplete data";
-          row.appendChild(school4Cell);
-
-          const school5Cell = document.createElement("td");
-          school5Cell.textContent =
-            schoolsData[school5][criterion] || "incomplete data"; // New column
-          row.appendChild(school5Cell);
+          selectedSchools.forEach((school) => {
+            const schoolCell = document.createElement("td");
+            schoolCell.textContent =
+              schoolsData[school][criterion] || "incomplete data";
+            row.appendChild(schoolCell);
+          });
 
           tableBody.appendChild(row);
         });
