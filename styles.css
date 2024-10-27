@@ -198,3 +198,22 @@ body.dark-mode tbody tr:nth-child(even) td:nth-child(6) {
 body.dark-mode tbody tr:nth-child(odd) td:nth-child(6) {
   background-color: rgba(102, 76, 51, 1);
 }
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+footer p {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer i {
+  margin: 0 2px;
+}
