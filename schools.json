@@ -1,5 +1,30 @@
 {
-  "ACS: American College of Sofia": {
+  "AISJ: American Int'l School of Johannesburg": {
+    "Location & Elevation": "Johannesburg, South Africa (1,753 m / 5,751 ft)",
+    "Climate": "Subtropical highland, warm summers and mild, dry winters",
+    "Salary Range": "$45,000 - $65,000",
+    "Benefits": "Housing, healthcare, annual flights, relocation allowance",
+    "Cost of Living": "Moderate to high",
+    "Taxes": "Progressive tax system (up to 45%)",
+    "Savings Potential": "Good, with careful budgeting",
+    "Healthcare Quality": "High quality private healthcare available",
+    "Mental Health Support": "Strong awareness and support programs",
+    "Visa Process": "Work visa required, process generally smooth for expats",
+    "Residency Options": "Possible, though limited",
+    "Language Barriers": "Minimal, English is widely spoken",
+    "Expat Community": "Large, diverse expat community in Johannesburg",
+    "Counselor-to-Student Ratio": "Average, with emphasis on mental health",
+    "Safety and Security": "Moderate, some security concerns in certain areas",
+    "Education System": "American, IB, and British curricula",
+    "Personal Safety": "Moderate, precautions necessary in specific areas",
+    "Professional Development": "Strong focus on continuous development",
+    "Cultural Integration": "Moderate, opportunities for integration exist",
+    "Ease of Travel": "Good, major hub for regional and international travel",
+    "Air Quality": "Moderate, with seasonal variation",
+    "Outdoor Activities": "Plenty, including safaris, hiking, and sports",
+    "Cleanliness": "Moderate to good, varies by neighborhood"
+},
+"ACS: American College of Sofia": {
     "Location & Elevation": "Sofia, Bulgaria (590 m / 1,936 ft)",
     "Climate": "Continental, cold winters, hot summers",
     "Salary Range": "$40,000 - $60,000",
@@ -74,7 +99,7 @@
     "Outdoor Activities": "Safari, nature reserves, hiking",
     "Cleanliness": "Moderate, mixed cleanliness levels"
   },
-  "ISP: International School of Panama": {
+  "ISP: Int'l School of Panama": {
     "Location & Elevation": "Panama City, Panama (15 m / 49 ft)",
     "Climate": "Tropical climate with a wet season and a dry season",
     "Salary Range": "$45,000 - $65,000",
@@ -99,7 +124,7 @@
     "Outdoor Activities": "Beaches, hiking, nature reserves",
     "Cleanliness": "Moderate, cleanliness levels vary by area"
   },
-  "AISB: American International School of Bucharest": {
+  "AISB: American Int'l School of Bucharest": {
     "Location & Elevation": "Bucharest, Romania (90 m / 295 ft)",
     "Climate": "Temperate-continental, with four distinct seasons",
     "Salary Range": "$40,000 - $60,000",
